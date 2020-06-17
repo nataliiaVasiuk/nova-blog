@@ -1,0 +1,56 @@
+{
+  "name": "optimistdigital/nova-blog",
+  "description": "Blog manager for Laravel Nova",
+  "keywords": [
+    "laravel",
+    "nova",
+    "page",
+    "manager",
+    "optimistdigital"
+  ],
+  "authors": [
+    {
+      "name": "Marika Must",
+      "email": "must.marika@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Tarvo Reinpalu",
+      "email": "tarvoreinpalu@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Optimist Digital",
+      "email": "info@optimistdigital.com",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0",
+    "doctrine/dbal": "^2.9",
+    "optimistdigital/nova-locale-field": "^2.0",
+    "whitecube/nova-flexible-content": "^0.2.3",
+    "optimistdigital/nova-multiselect-field": "^1.8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "OptimistDigital\\NovaBlog\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OptimistDigital\\NovaBlog\\ToolServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
